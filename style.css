@@ -1,6 +1,3 @@
-/* .présentation img{
-   width: 100%;
-}   */
 
 * {
     margin: 2px;
@@ -29,25 +26,27 @@ nav ul {
     display: flex;
     float: right;
 }
-#logo-description{
+nav li:hover {
+    transform: scale(1.5); 
+
+ }
+
+.Présentation{
+    background:linear-gradient(to top, rgba(194, 104, 167, 0.486), rgb(252, 252, 252));
+
+}
+.logo-description{
     display: flex;
     padding:10%;
-    background:linear-gradient(to top, rgba(194, 104, 167, 0.486), rgb(252, 252, 252));
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     height: 400px;
 }
 .logo{
-    /* width: 300px;
-    height: 200px; */
     float: left;
     padding: 2%;
     text-align: center;
     line-height: 2%;
     font-size: medium;
     margin-top: 10%;
-    /* flex-grow: 1; */
 }
 .logo img{
     width: 20em;
@@ -60,46 +59,52 @@ nav ul {
 }
 
 .description{
-    /* max-width: 500px; */
-    background-color: rgba(236, 178, 218, 0.315);
+    background-color: rgb(235, 162, 225);
     float: right;
     padding: 3%;
     margin-top: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: aliceblue;
     text-align: center;
-    font-size: medium;
+    font-size: larger;
     color: white;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
     span.ingredient {
     color: rgb(228, 30, 185);
-
+    font-family: 'Tapestry','Arial Narrow Bold';
+    font-weight:900;
+    font-size: 60px;;
 }
+
 .description h2{
-    font-size: 35px;
-  
+    font-size: 45px;
 }
 
+.description p{
+overflow: auto;
+
+}
+.skills{
+    position: static;
+    margin-top: 7rem;
+    
+}
 .card{
     display: flex;
-    /* flex-wrap: wrap; */
+ 
     justify-content: center;
     gap: 1%;
     width: 100%;
-    background:linear-gradient(to top, rgba(194, 104, 167, 0.486), rgb(252, 252, 252));
-}
+ }
 .box{
    padding: 2em;
    margin: 1em;
 }
 .box p{
 font-size: 1rem;
-/* font-family: 'abril fatface, serif'; 
-font: weight 900px; */
- }
-
+}
 
 .box img{
     height: 5em;
@@ -130,7 +135,6 @@ font: weight 900px; */
 
 .ctc{
     position: static;
-    /* border:  solid rgb(189, 126, 9);  */
     background:linear-gradient(to top, rgba(194, 104, 167, 0.486), rgb(252, 252, 252));
 
 }
@@ -143,20 +147,17 @@ font: weight 900px; */
    flex-wrap: wrap;
    border:  solid rgba(0, 0, 0, 0.39);
    background-color: rgb(235, 162, 225);
+   box-shadow: 7px 10px 9px rgb(153, 11, 117)
     
 }
 .center{
    width: 55%;
    padding: 2em 10em 2em 2em;
 }
-/* h2{
-    text-align: center;
-} */
+
 .socialmedia{
     width: 100%;
     font-size: 45px;
-/*     
-    text-align: center; */
     justify-content: center;
     align-items: center;
 }
@@ -170,6 +171,10 @@ font: weight 900px; */
     padding: 30px;
     margin: 5%;
 }
+.fa-brands:hover {
+transform: scale(1.5);
+
+ }
 .fa-github{
     color: rgb(255, 0, 157);
 }
@@ -178,4 +183,16 @@ font: weight 900px; */
 }
 footer{
     background-color: rgb(238, 167, 214);
+    height: ;
+}
+
+@media screen and (max-width: 991px) {
+    .logo-description{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills{
+        margin-top: 32rem;
+        
+    }
 }
