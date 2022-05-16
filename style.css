@@ -63,6 +63,7 @@ nav li:hover {
     color: white;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
     span.ingredient {
     color: rgb(228, 30, 185);
@@ -178,7 +179,7 @@ footer{
     background-color: rgb(238, 167, 214);
 }
 
-@media  (max-width: 991px) and (min-width:100px) {
+@media  (max-width: 952px) {
     .logo-description{
         display: flex;
         flex-direction: column;
@@ -202,22 +203,8 @@ footer{
     .logo img {
         margin-left: 18%;
     }
+    .description{
+        height: 500px;
+    }
 }
 
-@media  (max-width: 280px) {
-    span.ingredient{
-        font-size: 30px;
-    }
-    .description h2{
-        font-size: 25px;
-    }
-    .box{
-        padding: -10%;
-    }
-    .logo img {
-        margin-left: 0%;
-    }
-    body{
-        background: linear-gradient(to top, rgba(194, 104, 167, 0.486), rgb(252, 252, 252));
-    }
-}
